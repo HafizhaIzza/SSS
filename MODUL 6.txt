@@ -1,0 +1,11 @@
+void setup() {
+  DDRD=0b11111111;
+  PORTD=0b00000000;
+}
+
+void loop(){
+  PORTD=0b00001111;
+  delay(500);
+  PORTD=0b11110000;
+  delay(500);
+}
